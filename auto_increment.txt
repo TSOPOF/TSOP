@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER board_auto_increment
+BEFORE INSERT ON board_tb
+FOR EACH ROW
+BEGIN
+SELECT MAX(idx) + 1 INTO :new.idx FROM board_tb;
+END;
+/
