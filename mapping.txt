@@ -1,0 +1,10 @@
+ 1. web.xml
+	-*.do
+	-get, post
+
+ 2. 목록 작성
+Url mapping | Class name | Method name | Parameters | Retrun value
+board.do | BoardController.java Get |
+ id : String condition : String, page: int |
+
+ list
